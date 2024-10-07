@@ -70,26 +70,19 @@ const loadCategorys = (categories) => {
 const loadPets = (pets) => {
 
     const cuties_container = document.getElementById('cuties_container');
-    
-    
+    cuties_container.classList.remove('grid');
     cuties_container.innerHTML = `
-         <div></div>
-         <div class="text-center" class=" for_spinner"><span class="loading loading-bars loading-lg  for_spinner"></span></div>
-        <div class=""></div>
-
+         <div class=" flex justify-center items-center for_spinner"><span class="loading loading-bars loading-lg  for_spinner"></span></div>
+        
     `;
 
 
     setTimeout(() => {
 
-
-
         if (!pets || !Array.isArray(pets)) {
             console.log("not defined");
             return;
         }
-
-
 
         cuties_container.innerHTML = "";
 
@@ -98,7 +91,7 @@ const loadPets = (pets) => {
             cuties_container.innerHTML = `
            <div class="flex flex-col h-[60vh] justify-center items-center">
                 <img src="images/error.webp" alt="no videos available icon">
-                <p class="text-xl md:text-2xl mt-3 font-semibold">No Cuties Are Not Available Now!</p>
+                <p class="text-2xl mt-3 font-semibold">No Cuties Are Not Available Now!</p>
             </div>
         `;
 
@@ -293,8 +286,6 @@ const handleBtn = (cateName) => {
 // handle button for sorted by price
 const sortedByPrice = () => {
 
-
-
     const cuties_container = document.getElementById('cuties_container');
 
     const cuties_cards = Array.from(cuties_container.getElementsByClassName('cutie_card'));
@@ -303,7 +294,16 @@ const sortedByPrice = () => {
         return;
     }
 
+    //  loading spinner
+    cuties_container.classList.remove('grid');
+    cuties_container.innerHTML = `
+       
+        <div class="flex justify-center items-center for_spinner"><span class="loading loading-bars loading-lg for_spinner"></span></div>
+      
+    `;
+
     setTimeout(() => {
+        cuties_container.classList.add('grid');
         cuties_cards.sort((a, b) => {
             const card1 = parseFloat(a.getAttribute('data-price'));
             const card2 = parseFloat(b.getAttribute('data-price'));
