@@ -72,7 +72,7 @@ const loadPets = (pets) => {
     const cuties_container = document.getElementById('cuties_container');
     cuties_container.classList.remove('grid');
     cuties_container.innerHTML = `
-         <div class=" flex justify-center items-center for_spinner"><span class="loading loading-bars loading-lg  for_spinner"></span></div>
+         <div class=" flex justify-center items-center for_spinner h-auto"><span class="loading loading-bars loading-lg  for_spinner"></span></div>
         
     `;
 
@@ -199,28 +199,36 @@ const showDetailsModal = (petsDataById) => {
 
 }
 
-// show modal for when adopt button is clicked
+// show modal for when adopt button is clicked.
 const adoptBtn = (event) => {
 
     // adopt button disabled when button is clicked
     const button = event.target;
     button.disabled = true;
 
-    const modal_container = document.getElementById('modalContainer');
+    const modal_container = document.getElementById('adoptModalContainer');
     modal_container.innerHTML = `
 
     <div class="flex flex-col justify-center items-center px-4 lg:px-0">
     
-        <div><img src="https://img.icons8.com/?size=48&id=q6BlPrJZmxHV&format=png"></div>
-        <h2 class="text-4xl my-3 font-bold">Congrats!</h2>
+        <div><img src="https://img.icons8.com/?size=48&id=q6BlPrJZmxHV&format=png" class="w-[80px]"></div>
+        <h2 class="text-4xl my-5 font-bold">Congrats!</h2>
         <p class="counterNum text-5xl font-bold">3</p>
 
     </div>
- 
+
     `;
+
     //Show modal when button was clicked
-    const modal = document.getElementById('my_modal_5');
+    const modal = document.getElementById('adoptModal');
     modal.showModal();
+
+    //  // hide cancel button when adopt button clicked 
+    const modalAction = document.getElementById('modalAction');
+
+    if (modalAction) {
+        modalAction.style.display = 'none';
+    }
 
     // counter decrease logic
     let counter = 3;
@@ -231,16 +239,13 @@ const adoptBtn = (event) => {
         counterNum.innerText = counter;
 
         if (counter === 0) {
+            button.innerText = "Adopted";
             clearInterval(countdown);
             modal.close();
-
-
-
         }
     }, 1000);
 
 }
-
 
 // All button handle here
 
@@ -290,15 +295,16 @@ const sortedByPrice = () => {
 
     const cuties_cards = Array.from(cuties_container.getElementsByClassName('cutie_card'));
 
-    if(cuties_cards.length === 0){
+    if (cuties_cards.length === 0) {
         return;
     }
+
 
     //  loading spinner
     cuties_container.classList.remove('grid');
     cuties_container.innerHTML = `
        
-        <div class="flex justify-center items-center for_spinner"><span class="loading loading-bars loading-lg for_spinner"></span></div>
+        <div class="flex justify-center items-center for_spinner h-auto"><span class="loading loading-bars loading-lg for_spinner"></span></div>
       
     `;
 
@@ -323,7 +329,7 @@ const sortedByPrice = () => {
     }, 2000);
 }
 
-
+// fetch 2 function call here
 
 fetchCetegory();
 fetchAllPets();
