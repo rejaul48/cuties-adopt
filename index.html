@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your buddy</title>
+    <!-- google fonts default link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Lato google font link -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind and daisyUI cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- customize tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        lato: ["Lato", 'sans-serif'],
+                    }
+
+                },
+            },
+        }
+    </script>
+    <!-- customize tailwind -->
+
+</head>
+
+<body class="font-lato">
+
+    <div class="max-w-[1280px] mx-auto">
+
+
+        <!-- header area start -->
+        <header>
+
+            <nav class="navbar">
+                <div class="navbar flex justify-between items-center">
+                    <div class="web_logo order-2 lg:-order-1">
+                        <a class="text-4xl font-bold flex items-center gap-1" href="#"><img src="images/logo.webp"
+                                alt="website logo">Peddy</a>
+                    </div>
+                    <div class="order-1 lg:hidden">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a>Home</a></li>
+                                <li><a>Shope</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="navbar-center hidden lg:flex lg:order-2 ">
+                        <ul class="menu menu-horizontal px-1 text-lg font-[400]">
+                            <li><a>Home</a></li>
+                            <li><a>Shope</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="order-3">
+                        <a href="#"><img src="https://img.icons8.com/?size=48&id=E2LI0GQ7_ToC&format=png"
+                                alt="user icon"></a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="hero_section mt-12">
+                <!-- hero banner -->
+                <div class="banner text-center">
+
+                    <div class="hero">
+                        <div class="hero-content text-center">
+                            <div class="text-center">
+                                <p
+                                    class="flex items-center justify-center font-semibold pb-3 gap-1 text-[#131313] text-opacity-50">
+                                    Bringing Families Together <span><img
+                                            src="https://img.icons8.com/?size=48&id=QV5JEtrTP6nH&format=png"
+                                            alt="fire img" class="w-[25px]"></span></p>
+                                <h1 class="text-2xl md:text-6xl font-[900] text-[#131313]">Your Path to Adoption <br>
+                                    Start Here</h1>
+                                <p class="py-6  text-xs w-[85%] lg:w-[55%] text-opacity-50 mx-auto">
+                                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                                    exercitationem
+                                    quasi. In deleniti eaque aut repudiandae et a id nisi.
+                                </p>
+                                <a class="btn bg-[#0E7A81] text-white hover:bg-[#365e56]" href="#adopt_best_friend">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- hero img -->
+                <div class="hero_img flex justify-center items-center mt-4">
+                    <img src="images/pet.webp" alt="hero img" class="w-[460px] h-auto md:w-[780px] md:h-[450px]">
+                </div>
+
+            </div>
+
+        </header>
+        <!-- header area end -->
+
+        <!-- main area start -->
+        <main>
+
+            <section id="adopt_best_friend" class="adopt_your_best_friend">
+
+                <div class="section_head text-center mt-20">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">Adopt Your Best Friend</h2>
+                    <p class="text-xs w-[85%] mx-auto mt-2 lg:w-[46%] lg:mx-auto md:text-[16px]">It is a long
+                        established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+                </div>
+
+            </section>
+
+            <section id="categorysContainer" class="category_section mt-6 grid gap-3 grid-cols-2 md:grid-cols-4 px-4 ">
+
+
+
+                <!-- category items button -->
+                <!-- <button
+                    class="category_items flex items-center justify-center  gap-4 bg-[#0E7A81] bg-opacity-15 py-3 px-4 rounded-3xl border-2 border-[#0E7A81]">
+                    <img src="https://img.icons8.com/?size=50&id=823&format=png" alt="cats img" class="w-[30px]">
+                    <h2 class="text-xl font-[900]">Cats</h2>
+
+                </button> -->
+
+
+
+            </section>
+
+            <section class="best_deal_for_you mt-6 flex justify-between items-center px-4">
+                <h2 class="text-2xl font-bold">Best Deal For You</h2>
+                <button onclick="sortedByPrice()" class="btn bg-[#0E7A81] text-white hover:bg-[#365e56]">Sorted by Price</button>
+            </section>
+
+            <section class="cutie_section lg:flex gap-5 mt-12 px-4">
+
+                <!-- cuties cards section left side -->
+                <div id="cuties_container" class="left grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:w-9/12">
+
+
+                   
+                    <!-- card item -->
+                    <!-- <div class="cutie_card border-2 rounded-3xl p-3">
+                        <div class="p-2">
+                            <img src="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg"
+                                alt="cats img" class="w-full h-[200px] md:h-[190px] lg:h-[170px] border-2 rounded-2xl">
+                        </div>
+
+                        <div class="p-2">
+                            <h2 class="text-2xl text-[#131313] font-semibold pb-2">Mister Tartosh</h2>
+                            <p class="flex gap-2 items-center text-[#131313B3] text-opacity-20 text-lg"><img
+                                    src="https://img.icons8.com/?size=24&id=8daFRWXj88dq&format=png" alt="icon"
+                                    class="w-[15px]">Bread: <span
+                                    class="lg:text-sm lg:font-bold xl:text-[20px] xl:font-normal">Golder
+                                    retriever</span></p>
+                            <p class="flex gap-2 items-center text-[#131313B3] text-opacity-20 text-lg"><img
+                                    src="https://img.icons8.com/?size=48&id=12776&format=png" alt="calender img"
+                                    class="w-[15px]">Birth: <span>2024</span></p>
+                            <p class="flex gap-2 items-center text-[#131313B3] text-opacity-20 text-lg"><img
+                                    src="https://img.icons8.com/?size=30&id=77841&format=png" alt="gender icon"
+                                    class="w-[15px]">Gender: <span>Male</span></p>
+                            <p class="flex gap-2 items-center text-[#131313B3] text-opacity-20 text-lg"><img
+                                    src="https://img.icons8.com/?size=50&id=484&format=png" alt="price img"
+                                    class="w-[15px]">Price: <span>1800</span>$</p>
+
+                            <div class="divider"></div>
+
+                            <div class="more_details_container flex gap-1  items-center justify-between">
+                                <button class="btn px-2 border-2 border-[#0E7A81]"><img
+                                        src="https://img.icons8.com/?size=50&id=24816&format=png" alt=""
+                                        class="w-[25px]"></button>
+                                <button
+                                    class="btn px-2 border-2 border-[#0E7A81] text-[#0E7A81] text-[18px]">Adopt</button>
+                                <button
+                                    class="btn px-2 border-2 border-[#0E7A81] text-[#0E7A81] text-[18px]">Details</button>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+
+
+                </div>
+
+                <!-- cutie image show right side -->
+                <div id="cuties_right_side" class="right lg:w-3/12 mt-4 lg:mt-0 h-auto border-2 rounded-2xl">
+
+                    <div id="imgShowByLikeBtnClicked"
+                        class="cuties_just_img grid grid-cols-3 lg:grid-cols-2 gap-3  p-4 ">
+
+                        <!-- <div>
+                            <img src="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg"
+                                alt="cats img" class="w-full h-[110px]  md:h-[150px] lg:h-[110px] border-2 rounded-2xl">
+                        </div> -->
+
+
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+        <!-- main area end -->
+
+    </div>
+
+
+
+
+
+
+    <!-- details modal  -->
+
+
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle px-6 md:px-0">
+        <div class="modal-box">
+
+            <div id="modalContainer">
+
+            </div>
+
+            <div class="modal-action">
+                <form method="dialog" class="w-full">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn w-full text-xl">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+
+
+    <!-- footer area start -->
+
+
+
+    <footer class="footer bg-[#131313] h-auto mt-20">
+
+        <section class="footer_container text-white w-full max-w-[1280px] mx-auto  gap-12 py-28
+        md:grid md:grid-cols-2 lg:grid-cols-3 md:px-8
+        ">
+
+            <div class="left pl-8 md:pl-0">
+                <div class="web_logo">
+                    <a class="text-4xl font-bold flex items-center gap-1" href="#"><img src="images/logo.webp"
+                            alt="website logo">Peddy</a>
+                </div>
+                <address class="mt-5 text-[18px] text-white text-opacity-60 leading-8">
+                    Location: av. Washington 165, NY CA 54003 <br>
+                    Phone: +31 85 964 47 25 <br>
+                    Email: info@yourdomain.com <br>
+                    Openings hours: 9.00 AM - 5.00 PM <br>
+                </address>
+
+                <div class="social_media flex leading-8 items-center mt-2">
+
+                    <div><a href="#"><img src="https://img.icons8.com/?size=48&id=118497&format=png" alt="facebook"
+                                class="w-[45px]"></a></div>
+
+                    <div><a href="#"><img src="https://img.icons8.com/?size=80&id=eKiXk2V4qCvx&format=png" alt="twitter"
+                                class="w-[45px]"></a></div>
+
+                    <div><a href="#"><img src="https://img.icons8.com/?size=48&id=19318&format=png" alt="Youtube"
+                                class="w-[45px]"></a></div>
+
+                    <div><a href="#"><img src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png"
+                                alt="Instagram" class="w-[45px]"></a></div>
+                </div>
+
+
+            </div>
+
+            <div class="center pl-8 md:pl-0">
+                <h2 class="text-2xl font-bold">Useful Links</h2>
+                <ul class="mt-6 text-[18px] flex flex-col gap-2 text-white text-opacity-60">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Animals</a></li>
+                    <li><a href="#">Foundation</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="right pl-8 md:pl-5">
+                <h2 class="text-2xl font-bold pb-2">Drop a Message</h2>
+                <div class="subscribe mt-12">
+                    <label class="input items-center p-0  bg-black">
+
+                        <input type="email" placeholder="Enter Your Email "
+                            class="input  w-full border-2 focus:border-white" />
+                    </label>
+                    <div class="mt-3">
+                        <a class="btn bg-[#0E7A81] text-white hover:bg-[#365e56] w-full"
+                            href="#adopt_best_friend">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </footer>
+
+    <!-- footer area end -->
+
+
+    <!-- script file link -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
