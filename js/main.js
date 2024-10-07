@@ -95,7 +95,7 @@ const loadPets = (pets) => {
             cuties_container.classList.remove('grid');
             cuties_container.innerHTML = `
            <div class="flex flex-col h-[60vh] justify-center items-center">
-                <img src="../images/error.webp" alt="no videos available icon">
+                <img src="images/error.webp" alt="no videos available icon">
                 <p class="text-2xl mt-3 font-semibold">No Cuties Are Not Available Now!</p>
             </div>
         `;
