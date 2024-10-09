@@ -180,6 +180,10 @@ const showDetailsModal = (petsDataById) => {
                       src="https://img.icons8.com/?size=50&id=484&format=png" alt="price img"
                       class="w-[15px]">Price:${petsDataById.price ? ` <span>${petsDataById.price}</span>` : "Not Found"}$</p>
       
+                        <p class="flex gap-2 items-center text-[#131313B3] text-opacity-20 text-lg"><img
+                      src="https://img.icons8.com/?size=80&id=D2KoQlwyYs3k&format=png" alt="icon"
+                      class="w-[15px]">Vaccinated status: ${petsDataById.vaccinated_status?`<span>${petsDataById.vaccinated_status}</span>`:"Not Found"}</p>
+
               <div class="divider"></div>
       
               <div>
